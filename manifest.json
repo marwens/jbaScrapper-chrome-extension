@@ -1,0 +1,27 @@
+{
+    "version": "1",
+    "manifest_version": 2,
+    "description": "this a tool to scrap data from jbaScrapper-chrome-extension made by sarraj.marwen@gmail.com ",
+    "name": "jbaScrapper-chrome-extension",
+    "icons": {
+        "128": "images/off.png",
+        "48":  "images/on48.png",
+        "16":  "images/on16.png"
+    },
+    "permissions": [
+        "proxy",
+        "tabs",
+        "activeTab",
+        "webNavigation",
+        "https://www.jba.asn.au/*"
+    ],
+    "background": {
+    "persistent": true,
+    "scripts": ["background.js"]
+    },
+    "browser_action": {
+        "default_icon": "images/off.png",
+        "default_popup": ""
+    }
+}
+
